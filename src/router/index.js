@@ -1,8 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Layout from "../components/layout/Layout.vue";
-import About from "../components/About.vue";
-import HelloWorld from "../components/HelloWorld.vue";
+import Layout from "../components/layout/Layout";
+import TestAbout from "../components/TestAbout";
+import TestHello from "../components/TestHello";
 
 Vue.use(VueRouter);
 
@@ -11,18 +11,18 @@ const routes = [
     path: "/",
     component: Layout,
     redirect: {
-      path: "/hello"
+      path: "/testHello"
     },
     children: [
       {
-        path: "/hello",
-        name: "hello",
-        component: HelloWorld
+        path: "/testHello",
+        name: "testHello",
+        component: TestHello
       },
       {
-        path: "/about",
-        name: "about",
-        component: About
+        path: "/testAbout",
+        name: "testAbout",
+        component: TestAbout
       },
     ]
   }

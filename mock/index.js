@@ -1,8 +1,8 @@
 const Mock = require('mockjs')
 
-const apply = require('./apply')
+const testAPI = require('./testAPI')
 const mocks = [
-  ...apply
+  ...testAPI
 ]
 
 /**

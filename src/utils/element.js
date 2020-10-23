@@ -1,5 +1,8 @@
 import Vue from "vue";
 
+/**
+ * 可根据项目需要增减引入的elementUI组件
+*/
 import {
   Button,
   Input,
